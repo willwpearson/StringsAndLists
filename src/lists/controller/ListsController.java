@@ -39,7 +39,7 @@ public class ListsController
 		Kahoot fiftyStates = new Kahoot("Kashish", 50);
 		Kahoot mySecondKahoot = new Kahoot("Ethan", 2);
 		Kahoot worldCountries = new Kahoot("Will", 195);
-		Kahoot continentName = new Kahoot("Will", 7);
+		Kahoot continentName = new Kahoot("Jian", 7);
 		Kahoot bigQuiz = new Kahoot("Derek", Integer.MAX_VALUE);
 		// Added Kahoots into a list
 		myKahoots.add(fiftyStates);
