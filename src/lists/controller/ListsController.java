@@ -23,7 +23,8 @@ public class ListsController
 		myKahoots.add(myFirstKahoot);
 		fillTheList();
 //		showTheList();
-		changeTheList();
+//		changeTheList();
+		practiceTheList();
 	}
 	
 	private void showTheList()
@@ -87,6 +88,14 @@ public class ListsController
 		popup.displayText("The list is still: " + myKahoots.size() + " items big.");
 		removed = myKahoots.set(2, new Kahoot());
 		popup.displayText("The kahoot by " + removed.getCreator() + " was replaced with one by: " + myKahoots.get(2).getCreator());
-		
+	}
+
+	private void practiceTheList()
+	{
+		popup.displayText("The list is: " + myKahoots.size() + " items big.");
+		Kahoot rickAndMorty = new Kahoot("Rick Sanchez", Integer.MAX_VALUE, "Everything");
+		myKahoots.add(rickAndMorty);
+		popup.displayText("I added the Kahoot on: " + myKahoots.get(5).getTopic());
+		popup.displayText("The new list is: " + myKahoots.size() + " items big.");
 	}
 }
