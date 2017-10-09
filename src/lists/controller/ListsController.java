@@ -92,10 +92,27 @@ public class ListsController
 
 	private void practiceTheList()
 	{
+		// Adding an item to the list
 		popup.displayText("The list is: " + myKahoots.size() + " items big.");
 		Kahoot rickAndMorty = new Kahoot("Rick Sanchez", Integer.MAX_VALUE, "Everything");
 		myKahoots.add(rickAndMorty);
 		popup.displayText("I added the Kahoot on: " + myKahoots.get(5).getTopic());
 		popup.displayText("The new list is: " + myKahoots.size() + " items big.");
+		
+		// Removing an item from the list
+		Kahoot removes = myKahoots.set(6, rickAndMorty);
+		myKahoots.remove(rickAndMorty);
+		popup.displayText("I removed the Kahoot made by: " + removes.getCreator());
+		popup.displayText("The list is now: " + myKahoots.size() + " items big.");
+		
+		// Getting all the items in the list
+		String currentCreator = "";
+		for(int index = 0; index < myKahoots.size(); index ++)
+		{
+			currentCreator = myKahoots.get(index).getCreator();
+			popup.displayText(myKahoots.get(index).toString());
+		}
+		
+		
 	}
 }
