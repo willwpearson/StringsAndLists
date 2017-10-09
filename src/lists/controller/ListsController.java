@@ -113,6 +113,12 @@ public class ListsController
 			popup.displayText(myKahoots.get(index).toString());
 		}
 		
+		// Adding at a certain index
+		popup.displayText("The list is: " + myKahoots.size() + " items big.");
+		myKahoots.add(4, rickAndMorty);
+		popup.displayText("This list is now: " + myKahoots.size() + " items big.");
+		popup.displayText("I added the kahoot: " + myKahoots.get(4));
+		
 		
 	}
 }
