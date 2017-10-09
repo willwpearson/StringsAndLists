@@ -116,9 +116,11 @@ public class ListsController
 		// Adding at a certain index
 		popup.displayText("The list is: " + myKahoots.size() + " items big.");
 		myKahoots.add(4, rickAndMorty);
-		popup.displayText("This list is now: " + myKahoots.size() + " items big.");
-		popup.displayText("I added the kahoot: " + myKahoots.get(4));
+		popup.displayText("I added a new Kahoot. This list is now: " + myKahoots.size() + " items big.");
+		popup.displayText(myKahoots.get(4).toString());
 		
-		
+		// Adding a new Kahoot with parameters
+		myKahoots.add(new Kahoot("Jian", 10, "why Jian sux"));
+		popup.displayText(myKahoots.get(7).toString());
 	}
 }
