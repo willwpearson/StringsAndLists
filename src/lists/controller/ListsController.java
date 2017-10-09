@@ -121,6 +121,8 @@ public class ListsController
 		
 		// Adding a new Kahoot with parameters
 		myKahoots.add(new Kahoot("Jian", 10, "why Jian sux"));
+		popup.displayText("I added a new Kahoot");
 		popup.displayText(myKahoots.get(7).toString());
+		
 	}
 }
