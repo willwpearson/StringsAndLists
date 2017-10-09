@@ -125,4 +125,14 @@ public class ListsController
 		popup.displayText(myKahoots.get(7).toString());
 		
 	}
+
+	public ListsDisplay getPopup()
+	{
+		return popup;
+	}
+	
+	public ArrayList<Kahoot> getMyKahoots()
+	{
+		return (ArrayList<Kahoot>)myKahoots;
+	}
 }
