@@ -3,18 +3,18 @@ package lists.controller;
 import java.util.List;
 import java.util.ArrayList;
 import lists.model.Kahoot;
-import lists.view.ListsDisplay;
+import lists.view.PopupDisplay;
 
-public class ListsController
+public class ListController
 {
 	// Created a list for Kahoots
 	private List<Kahoot> myKahoots;
-	private ListsDisplay popup;
+	private PopupDisplay popup;
 	
-	public ListsController()
+	public ListController()
 	{
 		myKahoots = new ArrayList<Kahoot>();
-		popup = new ListsDisplay();
+		popup = new PopupDisplay();
 	}
 	
 	public void start()
@@ -126,7 +126,7 @@ public class ListsController
 		
 	}
 
-	public ListsDisplay getPopup()
+	public PopupDisplay getPopup()
 	{
 		return popup;
 	}
@@ -135,4 +135,5 @@ public class ListsController
 	{
 		return (ArrayList<Kahoot>)myKahoots;
 	}
+	
 }
