@@ -5,13 +5,13 @@ import java.util.ArrayList;
 import lists.model.Kahoot;
 import lists.view.PopupDisplay;
 
-public class ListController
+public class Controller
 {
 	// Created a list for Kahoots
 	private List<Kahoot> myKahoots;
 	private PopupDisplay popup;
 	
-	public ListController()
+	public Controller()
 	{
 		myKahoots = new ArrayList<Kahoot>();
 		popup = new PopupDisplay();
